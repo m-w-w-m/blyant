@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'blyant.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ['DB_NAME']
-        'USER': os.environ['DB_USER']
-        'PASSWORD': os.environ['DB_PASSWORD']
-        'HOST': os.environ['DB_HOST']
+        'NAME': os.environ['DB_NAME'],
+        'USER': os.environ['DB_USER'],
+        'PASSWORD': os.environ['DB_PASSWORD'],
+        'HOST': os.environ['DB_HOST'],
         'OPTIONS': {
             'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"',
         },
